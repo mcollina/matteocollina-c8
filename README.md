@@ -1,8 +1,11 @@
-# c8 - native V8 code-coverage
+# @matteocollina/c8 - native V8 code-coverage
 
-[![ci](https://github.com/bcoe/c8/actions/workflows/ci.yaml/badge.svg)](https://github.com/bcoe/c8/actions/workflows/ci.yaml)
-![nycrc config on GitHub](https://img.shields.io/nycrc/bcoe/c8)
+[![ci](https://github.com/matteocollina/c8/actions/workflows/ci.yaml/badge.svg)](https://github.com/matteocollina/c8/actions/workflows/ci.yaml)
+![nycrc config on GitHub](https://img.shields.io/nycrc/matteocollina/c8)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://www.conventionalcommits.org/)
+
+> **Note:** This is a fork of [`c8`](https://github.com/bcoe/c8) published as `@matteocollina/c8`.
+> The rename was done to guarantee compatibility with Node.js 26 and to drop the `yargs` dependency (replaced by `node:util` `parseArgs`).
 
 Code-coverage using [Node.js' built in functionality](https://nodejs.org/dist/latest-v10.x/docs/api/cli.html#cli_node_v8_coverage_dir)
 that's compatible with [Istanbul's reporters](https://istanbul.js.org/docs/advanced/alternative-reporters/).
@@ -10,7 +13,7 @@ that's compatible with [Istanbul's reporters](https://istanbul.js.org/docs/advan
 Like [nyc](https://github.com/istanbuljs/nyc), c8 just magically works:
 
 ```sh
-npm i c8 -g
+npm i @matteocollina/c8 -g
 c8 node foo.js
 ```
 
@@ -134,7 +137,7 @@ c8 --experimental-monocart --reporter=v8 --reporter=console-details node foo.js
 NOTE: Monocart requires additional `monocart-coverage-reports` to be installed:
 
 ```sh
-npm i monocart-coverage-reports@2 --save-dev
+npm i @matteocollina/c8 monocart-coverage-reports@2 --save-dev
 ```
 
 ## Ignoring Uncovered Lines, Functions, and Blocks

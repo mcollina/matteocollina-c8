@@ -1,13 +1,13 @@
 {
-  "name": "c8",
+  "name": "@matteocollina/c8",
   "version": "11.0.0",
-  "description": "output coverage reports using Node.js' built in coverage",
+  "description": "output coverage reports using Node.js' built in coverage (fork @matteocollina/c8, compatible with Node 26)",
   "main": "./index.js",
   "types": "./index.d.ts",
   "bin": "./bin/c8.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:bcoe/c8.git"
+    "url": "git@github.com:matteocollina/c8.git"
   },
   "scripts": {
     "test": "cross-env TS_NODE_SKIP_PROJECT=true node ./bin/c8.js mocha --timeout=10000 ./test/*.js",
@@ -30,7 +30,7 @@
     "inspector",
     "node"
   ],
-  "author": "Ben Coe <ben@npmjs.com>",
+  "author": "Matteo Collina <hello@matteocollina.com>",
   "license": "ISC",
   "dependencies": {
     "@bcoe/v8-coverage": "^1.0.1",
@@ -62,7 +62,7 @@
     }
   },
   "engines": {
-    "node": "20 || >=22"
+    "node": ">=20"
   },
   "files": [
     "index.js",
